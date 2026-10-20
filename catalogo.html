@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | D&amp;L Pijamas</title>
+    <link rel="stylesheet" href="styles/catalogo.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-mark" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+            <span class="logo-text">D&amp;L <span>Pijamas</span></span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="catalogo.html" class="active">Catálogo</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="cart-icon">
+                 <i class="fa-solid fa-cart-shopping"></i>
+                 <span id="cart-counter"></span>
+            </div>
+            <button class="hamburger" id="hamburger-button" aria-label="Abrir menú">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-section container">
+            <div class="catalog-header">
+                <span class="eyebrow">DULCES SUEÑOS, A TU ESTILO</span>
+                <h1>Encuentra tu próxima pijama favorita</h1>
+                <p>Explora nuestros diseños para descansar, relajarte y compartir. <strong>Modelos y precios de referencia.</strong></p>
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="search" id="search-bar" placeholder="Buscar por nombre...">
+                </div>
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="ninos">Niños</button>
+                    <button class="filter-btn" data-filter="ninas">Niñas</button>
+                    <button class="filter-btn" data-filter="adulto-femenino">Adultos femenino</button>
+                    <button class="filter-btn" data-filter="talla-plus">Talla plus</button>
+                    <button class="filter-btn" disabled aria-disabled="true" title="Próximamente">Adultos masculino <span class="filter-coming-soon">Próximamente</span></button>
+                </div>
+            </div>
+            
+            <div class="product-grid">
+                <div class="producto" data-category="adulto-femenino">
+                    <div class="image-container">
+                        <div class="product-art tone-lilac"><img src="img/pijama-set.svg" alt="Ilustración de conjunto de pijama lila"></div>
+                        <div class="product-overlay">
+                            <button class="btn-add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">ADULTOS · FEMENINO</span>
+                        <h3>Pijama Nube Lila</h3>
+                        <p class="price">$89.900</p>
+                    </div>
+                </div>
+                <div class="producto" data-category="talla-plus">
+                    <div class="image-container">
+                        <div class="product-art tone-rose"><img src="img/pijama-set.svg" alt="Ilustración de conjunto de pijama rosado"></div>
+                        <div class="product-overlay">
+                            <button class="btn-add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">TALLA PLUS</span>
+                        <h3>Pijama Abrazo en Casa Plus</h3>
+                        <p class="price">$99.900</p>
+                    </div>
+                </div>
+                <div class="producto" data-category="adulto-femenino">
+                    <div class="image-container">
+                        <div class="product-art tone-night"><img src="img/pijama-set.svg" alt="Ilustración de conjunto de pijama azul noche"></div>
+                        <div class="product-overlay">
+                            <button class="btn-add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">ADULTOS · FEMENINO</span>
+                        <h3>Pijama Noche Serena</h3>
+                        <p class="price">$94.900</p>
+                    </div>
+                </div>
+                <div class="producto" data-category="ninos">
+                    <div class="image-container">
+                        <div class="product-art tone-sun"><img src="img/pijama-set.svg" alt="Ilustración de conjunto de pijama amarillo suave"></div>
+                        <div class="product-overlay">
+                            <button class="btn-add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">NIÑOS</span>
+                        <h3>Pijama Pequeño Cometa</h3>
+                        <p class="price">$69.900</p>
+                    </div>
+                </div>
+                <div class="producto" data-category="adulto-femenino">
+                    <div class="image-container">
+                        <div class="product-art tone-rose"><img src="img/pijama-set.svg" alt="Ilustración de conjunto de pijama rosado"></div>
+                        <div class="product-overlay">
+                            <button class="btn-add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">ADULTOS · FEMENINO</span>
+                        <h3>Pijama Brisa Rosada</h3>
+                        <p class="price">$84.900</p>
+                    </div>
+                </div>
+                <div class="producto" data-category="talla-plus">
+                    <div class="image-container">
+                        <div class="product-art tone-sky"><img src="img/pijama-set.svg" alt="Ilustración de conjunto de pijama azul claro"></div>
+                        <div class="product-overlay">
+                            <button class="btn-add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">TALLA PLUS</span>
+                        <h3>Pijama Domingo Lento Plus</h3>
+                        <p class="price">$99.900</p>
+                    </div>
+                </div>
+                <div class="producto" data-category="adulto-femenino">
+                    <div class="image-container">
+                        <div class="product-art tone-night"><img src="img/pijama-set.svg" alt="Ilustración de conjunto de pijama azul noche"></div>
+                        <div class="product-overlay">
+                            <button class="btn-add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">ADULTOS · FEMENINO</span>
+                        <h3>Pijama Sueño Profundo</h3>
+                        <p class="price">$89.900</p>
+                    </div>
+                </div>
+                <div class="producto" data-category="ninas">
+                    <div class="image-container">
+                        <div class="product-art tone-lilac"><img src="img/pijama-set.svg" alt="Ilustración de conjunto de pijama lila"></div>
+                        <div class="product-overlay">
+                            <button class="btn-add-to-cart">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">NIÑAS</span>
+                        <h3>Pijama Pequeña Luna</h3>
+                        <p class="price">$69.900</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="cart" id="cart">
+        <button id="cart-close" aria-label="Cerrar carrito" title="Cerrar carrito" class="cart-close">×</button>
+        <h3>Tu carrito 🛍️</h3>
+        <div class="cart-items" aria-live="polite"></div>
+        <div class="cart-summary">
+            <div class="wholesale-notice" id="wholesale-notice">
+                <i class="fa-solid fa-box-open"></i> Para pedidos grandes, confirma disponibilidad por WhatsApp
+            </div>
+            <div class="cart-row subtotal">Subtotal: <span id="cart-subtotal">$0</span></div>
+            <fieldset class="shipping-options">
+                <legend>Método de entrega</legend>
+                <label><input type="radio" name="shippingMethod" value="delivery" checked> Domicilio</label>
+                <label><input type="radio" name="shippingMethod" value="pickup"> Recoger</label>
+            </fieldset>
+            <div class="cart-row shipping-fee">Costo envío: <span id="cart-shipping">$0</span></div>
+            <div class="cart-row total">Total: <strong id="cart-total">$0</strong></div>
+            <div class="cart-actions">
+                <button id="checkout-whatsapp" class="primary">Pagar por WhatsApp</button>
+                <button id="clear-cart" type="button">Vaciar carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="checkout-modal-content" role="document">
+            <button id="modal-close" aria-label="Cerrar formulario" title="Cerrar">×</button>
+            <h4>Detalles de envío</h4>
+            <form id="delivery-form">
+                <label for="delivery-address">Domicilio</label>
+                <input id="delivery-address" name="address" type="text" placeholder="Dirección completa" required>
+                <label for="contact-name">Nombre completo</label>
+                <input id="contact-name" name="name" type="text" placeholder="Nombre completo" required>
+                <label for="contact-phone">Número de celular</label>
+                <input id="contact-phone" name="phone" type="tel" placeholder="+57 300 0000000" required>
+                <div class="modal-buttons">
+                    <button type="button" id="modal-cancel">Cancelar</button>
+                    <button type="submit" class="primary">Confirmar y pagar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <span class="footer-brand"><i class="fa-solid fa-moon"></i> D&amp;L Pijamas</span>
+                <p>Dulces sueños, todos los días.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Información</h2>
+                <span>Política de envíos <span class="footer-pending">(próximamente)</span></span>
+                <span>Guía de tallas <span class="footer-pending">(próximamente)</span></span>
+                <span>Política de garantía <span class="footer-pending">(próximamente)</span></span>
+                <span>Encuesta de satisfacción <span class="footer-pending">(próximamente)</span></span>
+            </div>
+            <div class="footer-column">
+                <h2>Atención al cliente</h2>
+                <a href="https://wa.me/573172980319" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp para pedidos</a>
+                <span><i class="fa-brands fa-instagram"></i> Instagram <span class="footer-pending">(próximamente)</span></span>
+            </div>
+            <div class="footer-column footer-payment">
+                <h2>Medios de pago</h2>
+                <span class="wompi-badge"><i class="fa-solid fa-lock"></i> Wompi</span>
+                <span class="footer-pending">Consulta las opciones disponibles al confirmar tu pedido.</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 D&amp;L Pijamas</p>
+            <p>Desarrollado por:
+                <a href="https://www.strokbig.com" target="_blank" rel="noopener noreferrer">
+                    <img src="img/Logos/Strokbig-Logo-II-[SF].png" alt="Logotipo de Strokbig" width="150">
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts/inicio.js"></script> 
+</body>
+</html>

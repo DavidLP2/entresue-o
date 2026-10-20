@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 500" fill="none">
+  <defs>
+    <linearGradient id="fabric" x1="74" y1="105" x2="334" y2="428" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B99ADD"/>
+      <stop offset="1" stop-color="#8060AD"/>
+    </linearGradient>
+    <filter id="shadow" x="43" y="45" width="340" height="425" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <ellipse cx="210" cy="431" fill="#38264D" fill-opacity=".12" filter="url(#shadow)" rx="125" ry="16"/>
+  <g fill="url(#fabric)" stroke="#67488F" stroke-linejoin="round" stroke-width="5">
+    <path d="m158 79 35-20h34l35 20 45 27-29 57-27-16v99H135v-99l-27 16-29-57 45-27 34-20Z"/>
+    <path d="m135 246 75 6 75-6-8 75-8 103h-67l-8-116-8 116h-67l-8-103-8-75Z"/>
+    <path d="m193 59-13 30 30 24 30-24-13-30h-34Z"/>
+  </g>
+  <path d="m210 114v125m-57-108v89m114-89v89m-119 64h58m-58 15h58m-58 15h58m-58 15h58m16-45h58m-58 15h58m-58 15h58m-58 15h58" stroke="#E8DDF5" stroke-linecap="round" stroke-width="4" opacity=".9"/>
+  <path d="m210 139 4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1 4-9Zm-36-36 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Zm75 3 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z" fill="#F6F0FF"/>
+  <circle cx="210" cy="178" r="3.5" fill="#F6F0FF"/>
+  <circle cx="210" cy="198" r="3.5" fill="#F6F0FF"/>
+  <circle cx="210" cy="218" r="3.5" fill="#F6F0FF"/>
+  <path d="M151 423h63v12c0 8-6 14-14 14h-63c-4 0-7-3-7-7 0-10 8-19 21-19Zm55 0h63v12c0 8 6 14 14 14h63c4 0 7-3 7-7 0-10-8-19-21-19h-63Z" fill="#67488F" stroke="#67488F" stroke-linejoin="round" stroke-width="5"/>
+</svg>
